@@ -141,3 +141,682 @@ Processing by ItemsController#index as */*
 Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 0.5ms)
 
 
+Started POST "//authenticate" for 127.0.0.1 at 2019-03-17 20:00:23 +0300
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"dogukanucak94@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"dogukanucak94@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dogukanucak94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dogukanucak94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+Completed 200 OK in 131ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "//authenticate" for 127.0.0.1 at 2019-03-17 20:00:24 +0300
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"dogukanucak94@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"dogukanucak94@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dogukanucak94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dogukanucak94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+Completed 200 OK in 131ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "//authenticate" for 127.0.0.1 at 2019-03-17 20:00:25 +0300
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"dogukanucak94@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"dogukanucak94@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dogukanucak94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dogukanucak94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+Completed 200 OK in 130ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "//authenticate" for 127.0.0.1 at 2019-03-17 20:00:25 +0300
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"dogukanucak94@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"dogukanucak94@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dogukanucak94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dogukanucak94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+Completed 200 OK in 128ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "//authenticate" for 127.0.0.1 at 2019-03-17 20:00:26 +0300
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"dogukanucak94@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"dogukanucak94@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dogukanucak94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dogukanucak94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+Completed 200 OK in 139ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:50:50 +0300
+Processing by ItemsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:50:50 +0300
+Processing by ItemsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:50:51 +0300
+Processing by ItemsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:50:53 +0300
+Processing by ItemsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:50:54 +0300
+Processing by ItemsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:50:54 +0300
+Processing by ItemsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:50:59 +0300
+Processing by ItemsController#index as */*
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:54:14 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:54:15 +0300
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:54:15 +0300
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:54:16 +0300
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:54:19 +0300
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:8
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "//items" for 127.0.0.1 at 2019-03-17 21:54:27 +0300
+Processing by ItemsController#index as */*
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "//authenticate" for 127.0.0.1 at 2019-03-17 22:13:15 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"dogukanucak94@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"dogukanucak94@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dogukanucak94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dogukanucak94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+Completed 200 OK in 140ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "//users" for 127.0.0.1 at 2019-03-17 22:14:40 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "//users" for 127.0.0.1 at 2019-03-17 22:17:29 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "//users" for 127.0.0.1 at 2019-03-17 22:17:30 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:17:35 +0300
+Processing by RegisterController#createNewUser as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:17:51 +0300
+Processing by RegisterController#createNewUser as */*
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:33:12 +0300
+  
+SyntaxError (/home/android/Desktop/Rails Projects/LoginApi/app/controllers/register_controller.rb:7: syntax error, unexpected '}', expecting =>
+...   render json: {params[:User]}
+...                              ^):
+  
+app/controllers/register_controller.rb:7: syntax error, unexpected '}', expecting =>
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:33:50 +0300
+  
+SyntaxError (/home/android/Desktop/Rails Projects/LoginApi/app/controllers/register_controller.rb:7: syntax error, unexpected '}', expecting =>
+...   render json: {params[:user]}
+...                              ^):
+  
+app/controllers/register_controller.rb:7: syntax error, unexpected '}', expecting =>
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:34:02 +0300
+Processing by RegisterController#createNewUser as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:34:26 +0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	User: {
+		test: aa
+	}
+}
+  
+ActionDispatch::Http::Parameters::ParseError (765: unexpected token at '{
+	User: {
+		test: aa
+	}
+}'):
+  
+actionpack (5.2.2.1) lib/action_dispatch/http/parameters.rb:117:in `rescue in parse_formatted_parameters'
+actionpack (5.2.2.1) lib/action_dispatch/http/parameters.rb:111:in `parse_formatted_parameters'
+actionpack (5.2.2.1) lib/action_dispatch/http/request.rb:381:in `block in POST'
+rack (2.0.6) lib/rack/request.rb:59:in `fetch'
+rack (2.0.6) lib/rack/request.rb:59:in `fetch_header'
+actionpack (5.2.2.1) lib/action_dispatch/http/request.rb:380:in `POST'
+actionpack (5.2.2.1) lib/action_dispatch/http/parameters.rb:55:in `parameters'
+actionpack (5.2.2.1) lib/action_controller/metal/params_wrapper.rb:290:in `_wrapper_enabled?'
+actionpack (5.2.2.1) lib/action_controller/metal/params_wrapper.rb:244:in `process_action'
+activerecord (5.2.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+activerecord (5.2.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:35:26 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"User"=>{"email"=>"test"}, "register"=>{"User"=>{"email"=>"test"}}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:35:37 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"User"=>{"email"=>"test"}, "register"=>{"User"=>{"email"=>"test"}}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:35:38 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"User"=>{"email"=>"test"}, "register"=>{"User"=>{"email"=>"test"}}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:35:48 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"User"=>{"email"=>"test"}, "register"=>{"User"=>{"email"=>"test"}}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:39:59 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"User"=>{"email"=>"test"}, "register"=>{"User"=>{"email"=>"test"}}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:40:00 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"User"=>{"email"=>"test"}, "register"=>{"User"=>{"email"=>"test"}}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:40:12 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"email"=>"test", "register"=>{"email"=>"test"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:49:42 +0300
+  
+SyntaxError (/home/android/Desktop/Rails Projects/LoginApi/app/controllers/register_controller.rb:6: syntax error, unexpected ']', expecting ')'
+...params[:password_confirmation]])
+...                              ^
+/home/android/Desktop/Rails Projects/LoginApi/app/controllers/register_controller.rb:18: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/register_controller.rb:6: syntax error, unexpected ']', expecting ')'
+app/controllers/register_controller.rb:18: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:50:23 +0300
+  
+SyntaxError (/home/android/Desktop/Rails Projects/LoginApi/app/controllers/register_controller.rb:18: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/register_controller.rb:18: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:50:24 +0300
+  
+SyntaxError (/home/android/Desktop/Rails Projects/LoginApi/app/controllers/register_controller.rb:18: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/register_controller.rb:18: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:53:35 +0300
+  
+SyntaxError (/home/android/Desktop/Rails Projects/LoginApi/app/controllers/register_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/register_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:54:20 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"email"=>"test", "register"=>{"email"=>"test"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/android/Desktop/Rails Projects/LoginApi/app/models/user.rb:3: syntax error, unexpected tIDENTIFIER, expecting '}'
+...with: /\A[^@]+@[^@]+\z/ message: "Please Enter A Valid Email...
+...                        ^~~~~~~
+/home/android/Desktop/Rails Projects/LoginApi/app/models/user.rb:3: syntax error, unexpected '}', expecting keyword_end
+...: "Please Enter A Valid Email"}, on: create
+...                              ^):
+  
+app/models/user.rb:3: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/models/user.rb:3: syntax error, unexpected '}', expecting keyword_end
+app/controllers/register_controller.rb:6:in `createNewUser'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:56:01 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"email"=>"test", "register"=>{"email"=>"test"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:3
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.7ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 3, expected 0..1)):
+  
+app/controllers/register_controller.rb:6:in `createNewUser'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:59:01 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"email"=>"test", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "register"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 3, expected 0..1)):
+  
+app/controllers/register_controller.rb:6:in `createNewUser'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 22:59:03 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"email"=>"test", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "register"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 3, expected 0..1)):
+  
+app/controllers/register_controller.rb:6:in `createNewUser'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:01:57 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"email"=>"test", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "register"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:3
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 0.7ms)
+
+
+  
+NameError (undefined local variable or method `user_params' for #<RegisterController:0x00007fd05805b7b8>):
+  
+app/controllers/register_controller.rb:6:in `createNewUser'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:08:02 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:3
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.7ms)
+
+
+  
+NameError (undefined local variable or method `user_params' for #<RegisterController:0x00007fd0446ebce0>):
+  
+app/controllers/register_controller.rb:6:in `createNewUser'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:08:22 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"email"=>"test", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "register"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:3
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.8ms)
+
+
+  
+NameError (undefined local variable or method `register_params' for #<RegisterController:0x00007fd058021450>
+Did you mean?  register_path):
+  
+app/controllers/register_controller.rb:6:in `createNewUser'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:10:39 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "register"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:3
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 3, expected 0..1)):
+  
+app/controllers/register_controller.rb:6:in `createNewUser'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:14:00 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:3
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.7ms)
+
+
+  
+NameError (undefined local variable or method `user_params' for #<RegisterController:0x00007fd04493ec40>):
+  
+app/controllers/register_controller.rb:6:in `createNewUser'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:15:51 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/register_controller.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "test"], ["password_digest", "$2a$10$0leaoPHjmboCcHninBn2Yeb5h9aMbSTHoE8uNgevo5EHzHJ5rwNLS"], ["created_at", "2019-03-17 20:15:51.484147"], ["updated_at", "2019-03-17 20:15:51.484147"]]
+  ↳ app/controllers/register_controller.rb:9
+  [1m[35m (62.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/register_controller.rb:9
+Completed 200 OK in 145ms (Views: 0.2ms | ActiveRecord: 63.5ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:16:08 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 200 OK in 73ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:16:24 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/register_controller.rb:9
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "test"], ["password_digest", "$2a$10$qa4gm7POMC3XRnpkaN64oO3R93jJdrriAJf5RmFVTb4hTYrJnj1NK"], ["created_at", "2019-03-17 20:16:25.033234"], ["updated_at", "2019-03-17 20:16:25.033234"]]
+  ↳ app/controllers/register_controller.rb:9
+  [1m[35m (72.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/register_controller.rb:9
+Completed 200 OK in 145ms (Views: 0.2ms | ActiveRecord: 72.5ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:17:13 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/register_controller.rb:9
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "test"], ["password_digest", "$2a$10$r/yyAf/C4IZgwzZAN41FY.v643rGpN66HADeevHfv1PnHOjtGRiE6"], ["created_at", "2019-03-17 20:17:13.432175"], ["updated_at", "2019-03-17 20:17:13.432175"]]
+  ↳ app/controllers/register_controller.rb:9
+  [1m[35m (49.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/register_controller.rb:9
+Completed 200 OK in 137ms (Views: 0.2ms | ActiveRecord: 50.4ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:17:45 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:8
+Completed 200 OK in 81ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:18:17 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (undefined local variable or method `save' for #<Class:0x00007fd04c00bb70>):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/register_controller.rb:6:in `createNewUser'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:18:34 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (undefined local variable or method `createNewUser' for #<Class:0x00007fd058038df8>
+Did you mean?  create_with):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/register_controller.rb:6:in `createNewUser'
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:22:56 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:8
+Completed 200 OK in 83ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:23:08 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/register_controller.rb:9
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:9
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "test@gmail.com"], ["password_digest", "$2a$10$rAh2jYJIR0v26H/bVpQGyej2aVmooHHdk0.MvuaIbh5puIsLULlBi"], ["created_at", "2019-03-17 20:23:08.857888"], ["updated_at", "2019-03-17 20:23:08.857888"]]
+  ↳ app/controllers/register_controller.rb:9
+  [1m[35m (73.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/register_controller.rb:9
+Completed 200 OK in 150ms (Views: 0.2ms | ActiveRecord: 74.5ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:23:14 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test@gmas2222il.c3om", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test@gmas2222il.c3om", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmas2222il.c3om"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/register_controller.rb:9
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmas2222il.c3om"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:9
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "test@gmas2222il.c3om"], ["password_digest", "$2a$10$XyedaJaB4YW4UdA0gdE/QORgQgpBv526toiUnN3dg2.gkjdfEPgu."], ["created_at", "2019-03-17 20:23:14.757384"], ["updated_at", "2019-03-17 20:23:14.757384"]]
+  ↳ app/controllers/register_controller.rb:9
+  [1m[35m (49.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/register_controller.rb:9
+Completed 200 OK in 124ms (Views: 0.1ms | ActiveRecord: 50.3ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:23:19 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test@@gmas2222il.c3om", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test@@gmas2222il.c3om", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@@gmas2222il.c3om"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:8
+Completed 200 OK in 76ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:23:34 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test@g.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test@g.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/register_controller.rb:9
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:9
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "test@g.com"], ["password_digest", "$2a$10$YRbOl0yhF1E7oYPv/jUqXu6rGpmJsO01sU2B0WlgcOGPocgcYgKNa"], ["created_at", "2019-03-17 20:23:34.483678"], ["updated_at", "2019-03-17 20:23:34.483678"]]
+  ↳ app/controllers/register_controller.rb:9
+  [1m[35m (90.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/register_controller.rb:9
+Completed 200 OK in 168ms (Views: 0.1ms | ActiveRecord: 91.3ms)
+
+
+Started POST "//register" for 127.0.0.1 at 2019-03-17 23:23:38 +0300
+Processing by RegisterController#createNewUser as */*
+  Parameters: {"user"=>{"email"=>"test@g.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "register"=>{"user"=>{"email"=>"test@g.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:8
+Completed 200 OK in 74ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
